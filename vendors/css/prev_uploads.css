@@ -1,0 +1,119 @@
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.row {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.title-row-container {
+  flex: 1 1 100%;
+  place-content: stretch center;
+  align-items: stretch;
+  max-height: 100%;
+}
+
+.title-container {
+  place-content: stretch flex-start;
+  align-items: stretch;
+}
+.title {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.ah-header-title-container {
+  flex: 1 1 100%;
+  place-content: stretch center;
+  align-items: stretch;
+  max-height: 100%;
+}
+.ah-header-title {
+  flex: 1 1 32px;
+  box-sizing: border-box;
+  max-width: 32px;
+  min-width: 32px;
+}
+.ah-header-title-underline-container {
+  place-content: stretch flex-start;
+  align-items: stretch;
+}
+.ah-header-title-underline {
+  padding-bottom: 0.2rem;
+  border-bottom: 4px solid #54b088;
+  flex: 1 1 32px;
+  box-sizing: border-box;
+  max-width: 32px;
+  min-width: 32px;
+}
+
+section {
+  width: 100%;
+  padding: 1rem;
+}
+
+.upload-section {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+.upload-container {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-direction: row;
+  display: flex;
+  min-height: auto;
+}
+.smaller-font {
+  font-size: .9em!important;
+  text-align: left;
+}
+.upload-section {
+  margin-bottom: 1rem;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  display: flex;
+}
+.upload-header {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+hr {
+  border-style: groove;
+}
+table {
+  margin-top: 25px;
+  text-align: left;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  th {
+    font-weight: normal;
+  }
+  tbody {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.3);
+    tr:hover {
+      background-color: #f4f6f8;
+    }
+    td {
+      padding: 3px 3px;
+    }
+  }
+}
+.ah-green {
+  color: #54b088!important;
+}

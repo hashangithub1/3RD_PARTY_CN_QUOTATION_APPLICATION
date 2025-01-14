@@ -1,0 +1,269 @@
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #81bd43;
+    border-radius:10px;            
+}
+.form-column {
+    flex: 1;
+    padding: 10px;
+}
+.form-group {
+    margin-block-end: 1px;
+}
+label {
+    display: block;
+    margin-block-start:5px;
+    margin-block-end: 5px; 
+}
+input[type="text"], input[type="email"], input[type="date"], select {
+    inline-size: 100%;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: white;
+    color:#5d6771;
+}
+select:focus {
+border-color: #81bd41; 
+}
+input:focus {
+border-color: #81bd41; 
+}
+select:active {
+border-color: #81bd41; 
+}
+textarea {
+  inline-size: 100%;
+  block-size: 100px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background: white;
+  color:#5d6771;
+}
+textarea:focus {
+border-color: #81bd41; 
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.heading {
+  font-size:15px;
+  color: #81bd44;
+}
+hr {
+  background: #81bd44;
+}
+.daterange {
+  display:flex;
+}
+.form-check {
+  margin-block-start:0px;
+  margin-block-end:0px;
+}
+
+@media screen and (max-inline-size: 480px) {
+.container-form {
+display: block;
+}
+.daterange {
+  display: block;
+  inline-size: 90%;
+}
+}
+/* Tab */
+ul.tabs {
+  margin: 0;;
+  float: inline-start;
+  list-style: none;
+  block-size: 32px;
+  inline-size: 100%;
+}
+
+ul.tabs li {
+  float: inline-start;
+  margin-inline-end: 5px;
+  cursor: pointer;
+  padding: 0px 21px;
+  line-height: 31px;
+  background-color: #5d6771;
+  color: #ccc;
+  overflow: hidden;
+  position: relative;
+}
+
+ul.tabs li:hover {
+  background-color: #81bd43;
+  color: #333;
+}
+
+ul.tabs li.active {
+  background-color: #81bd43;
+  color: #333;
+  border-block-end: 1px solid #fff;
+  display: block;
+}
+
+.tab_container {
+  clear: both;
+  float: inline-start;
+  inline-size: 100%;
+  background: #fff;
+  overflow: auto;
+}
+.tab_content {
+  padding: 20px;
+  display: none;
+}
+
+.tab_drawer_heading { display: none; }
+
+@media screen and (max-inline-size: 480px) {
+  .tabs {
+  display: none;
+}
+.tab_drawer_heading {
+  background-color: #ccc;
+  color: #fff;
+  border-block-start: 1px solid #333;
+  margin: 0;
+  padding: 5px 20px;
+  display: block;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.d_active {
+  background-color: #666;
+  color: #fff;
+}
+}
+
+/* Datagrid */
+.table-responsive {
+overflow-x: auto;
+}
+
+.custom-table {
+inline-size: 100%;
+border-collapse: collapse;
+font-size:13px;
+}
+
+.custom-table th,
+.custom-table td {
+border: 1px solid #81bd43;
+padding: 5px;
+text-align: start;
+}
+.td-premium {
+text-align: end;
+}
+.custom-table th {
+background-color: #81bd43;
+}
+
+.custom-table tbody tr:nth-child(even) {
+background-color: none;
+}
+
+.add-button, .remove-button, .save-button {
+display: inline-block;
+background-color: #81bd43;
+margin-block-start: 10px;
+border-radius: 0px;
+padding-block-start: 2px;
+padding-inline-start: 10px;
+padding-inline-end: 10px;
+padding-block-end: 2px;
+}
+button:hover {
+background-color: #81bd43;
+}
+
+.save-button1 {
+display: inline-block;
+background-color: #81bd43;
+margin-block-start: 10px;
+border-radius: 0px;
+padding-block-start: 2px;
+padding-inline-start: 10px;
+padding-inline-end: 10px;
+padding-block-end: 2px;
+}
+option {
+inline-size: 80%;
+}
+/* Form Background Effect*/ 
+
+.container-fluid {
+background-color: #24282d;
+}
+.container {
+padding-block-end: 25px;
+}
+
+/* Custom alert message */
+.warning-box {
+display: none; /* Initially hidden */
+align-items: center;
+background-color: #1e1e1e; /* Orange background */
+color: #e67e22;; /* White text */
+padding: 15px;
+border-radius: 5px;
+border-inline-start: 10px solid #e67e22; /* Left border with darker orange */
+margin: 20px 0;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon container */
+.warning-icon {
+font-size: 30px;
+margin-inline-end: 15px;
+}
+
+/* Text container */
+.warning-content {
+flex-grow: 1;
+}
+
+.warning-content h4 {
+margin: 0;
+font-size: 18px;
+}
+
+.warning-content p {
+margin: 0;
+font-size: 14px;
+}
+
+/* Styles for the close button */
+.close-btn {
+background: white;
+color: #e67e22;
+padding: 5px 10px;
+border: none;
+cursor: pointer;
+border-radius: 3px;
+margin-inline-start: 20px;
+font-size: 14px;
+}
+
+.close-btn:hover {
+background: #e67e22;
+color: white;
+}

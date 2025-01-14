@@ -1,0 +1,29 @@
+/* Snowflake styles */
+   /* Base styles */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    color: #ffffff; /* White snowflake color */
+    font-size: 10px; /* Default font size for snowflakes */
+    opacity: 0.8; /* Slight transparency for a better effect */
+    user-select: none; /* Prevent users from selecting the snowflake */
+    pointer-events: none; /* Prevent interaction with snowflakes */
+  }
+
+  /* Keyframes for smooth falling animation */
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
